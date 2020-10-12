@@ -9,7 +9,7 @@
       <input
         th:replace="~{fragments/inputField :: input ('Good Name', 'firstName', 'text')}" />
       <input
-        th:replace="~{fragments/inputField :: input ('Last Name', 'lastName', 'text')}" />
+        th:replace="~{fragments/inputField :: input ('Surname', 'lastName', 'text')}" />
       <input
         th:replace="~{fragments/inputField :: input ('Address', 'address', 'text')}" />
       <input
@@ -20,7 +20,7 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <button
-          th:with="text=${owner['new']} ? 'Add New Owner' : 'Update Owner'"
+          th:with="text=${owner['new']} ? 'Add New dd Owner' : 'Update Owner'"
           class="btn btn-default" type="submit" th:text="${text}">Add
           Owner</button>
       </div>
